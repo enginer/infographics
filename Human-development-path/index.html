@@ -1,0 +1,83 @@
+<html>
+<head>
+	<!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/jquery.loupe.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.demo').loupe({
+				width: 500,
+				height: 200
+  			});
+		});
+    </script-->
+    <style>
+		h1 {
+	font-size: 18px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+		}
+		#main {
+			width: 655px;
+			margin: 50px auto;
+		}
+		#demo {
+			float: left;
+		    width: 353px;
+			padding-top: 20px;
+		}
+		#panel {
+			float: left;
+			width: 280px;
+			margin-left: 20px;
+			font-size: 14px;
+		}
+		#likes {
+			padding: 10px 0px;
+		}
+		#vk_like {
+			float: left;
+		}
+	</style>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="main">
+	<div id="demo"> <a href="Human-development-path.pdf"><img src="Human-development-path.h500.png"/></a> 
+  </div>
+    <div id="panel">
+        <h1>Человеческий путь развития</h1>
+      <p>Объединение ментальности и чувственности, ведущее к высокочувственному Интеллекту и высокоинтеллектуальному Альтруизму</p>
+        <h2>Скачать (Версия 1.0)</h2>
+        <p><a href="Human-development-path.png"><img src="http://png-1.findicons.com/files/icons/2192/flavour_extended/48/file_png.png" alt="png" title="png"></a>
+        <a href="Human-development-path.pdf"><img src="http://png-4.findicons.com/files/icons/2192/flavour_extended/48/file_pdf.png" alt="pdf" title="pdf"></a>
+        <a href="Human-development-path.ai"><img src="http://icons.iconarchive.com/icons/deleket/adobe-cs4/48/File-Adobe-Illustrator-01-icon.png" style="margin-bottom:3px" title="AI" alt="AI" width="42" height="42"></a></p>
+        <img alt="QR code" title="QR code" src="qr-code.png"/>	
+    </div>
+  <div style="clear:both"></div>
+    <!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?105"></script>
+
+<script type="text/javascript">
+  VK.init({apiId: 4037882, onlyWidgets: true});
+</script>
+<div id="likes">
+    <div id="vk_like"></div>
+    <div class="fb-share-button" data-href="http://ayfaar.kiev.ua/infographics/Human-development-path/" data-width="25" data-type="button_count"></div>
+</div>
+<script type="text/javascript">
+VK.Widgets.Like("vk_like", {type: "mini", verb: 1});
+</script>
+    
+<div id="vk_comments"></div>
+<script type="text/javascript">
+VK.Widgets.Comments("vk_comments", {limit: 50, width: "655", attach: "*"});
+</script>
+</div>	
+</body>
+</html>
